@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Demo Sep Batch">
+   <test name = "My Demo Test 1" parallel="methods" thread-count="2">
+   <parameter name = "param1" value = "val1"/>
+      <classes>
+         <class name = "testng.ParallelTest" />
+      </classes>
+   </test>
+
+</suite>
